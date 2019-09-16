@@ -380,6 +380,7 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
     resizableImageView.clipsToBounds = YES;
     resizableImageView.contentMode = _senderViewForAnimation ? _senderViewForAnimation.contentMode : UIViewContentModeScaleAspectFill;
     resizableImageView.backgroundColor = [UIColor clearColor];
+    resizableImageView.layer.zPosition = 1;
     if (@available(iOS 11.0, *)) {
         resizableImageView.accessibilityIgnoresInvertColors = YES;
     } else {
